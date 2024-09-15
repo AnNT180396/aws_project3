@@ -48,8 +48,8 @@ AccelerometerTrusted_node = glueContext.create_dynamic_frame.from_options(
 AccelerometerStepTrainer_node = Join.apply(
     frame1=AccelerometerTrusted_node,
     frame2=StepTrainerTrusted_node,
-    keys1=["timeStamp"],
-    keys2=["sensorReadingTime"],
+    keys1=["timestamp"],
+    keys2=["sensorreadingtime"],
     transformation_ctx="AccelerometerStepTrainer_node",
 )
 
