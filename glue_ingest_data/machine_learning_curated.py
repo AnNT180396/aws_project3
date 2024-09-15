@@ -70,7 +70,7 @@ MachineLearningCurated_node = glueContext.write_dynamic_frame.from_options(
     connection_type="s3",
     format="json",
     connection_options={
-        "path": "s3://stedi-project/machine_learning/curated/",
+        "path": "s3://stedi-project/step_trainer/curated/",
         "partitionKeys": [],
     },
     transformation_ctx="MachineLearningCurated_node",
